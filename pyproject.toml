@@ -1,0 +1,28 @@
+[project]
+name = "scratchpad"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Matthew Turk", email = "matthewturk@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "cython>=3.3.0",
+    "h5py>=3.16.0",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "scipy>=1.18.1",
+    "sympy>=1.14.0",
+    "unyt>=3.1.0",
+    "yt>=4.4.3",
+]
+
+[project.scripts]
+scratchpad = "scratchpad:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
